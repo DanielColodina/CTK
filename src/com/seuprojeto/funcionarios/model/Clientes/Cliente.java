@@ -1,8 +1,6 @@
 package com.seuprojeto.funcionarios.model.Clientes;
 
-import com.seuprojeto.funcionarios.model.Obras.Obras;
-
-public class Clientes {
+public class Cliente {
 
     private Long id;
     private String nome;
@@ -10,8 +8,6 @@ public class Clientes {
     private String enderecoObra;
     private Long cpf;
     private String senha;
-    //private String Andamento;
-
 
     public Long getId() {
         return id;
@@ -20,15 +16,6 @@ public class Clientes {
     public void setId(Long id) {
         this.id = id;
     }
-
-
-   /* public String getAndamento() {
-        return Andamento;
-    }
-
-    public void setAndamento(String andamento) {
-        Andamento = andamento;
-    }*/
 
     public Long getCpf() {
         return cpf;
@@ -46,11 +33,9 @@ public class Clientes {
         this.enderecoObra = enderecoObra;
     }
 
-
     public String getNome() {
         return nome;
     }
-
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -71,8 +56,4 @@ public class Clientes {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-
-
-
-
 }

@@ -1,7 +1,7 @@
 package com.seuprojeto.funcionarios.dao.Funcionarios;
 
 
-import com.seuprojeto.funcionarios.connection.ConnectionFuncionario;
+import com.seuprojeto.funcionarios.connection.ConnectionFactory;
 import com.seuprojeto.funcionarios.model.Funcionarios.Funcionarios;
 
 import java.sql.Connection;
@@ -18,7 +18,7 @@ public class DAOFuncionarios {
 
     //Adicionando Funcaionarios
     public DAOFuncionarios() {
-        this.connection = new ConnectionFuncionario().getConnection();
+        this.connection = new ConnectionFactory().getConnection();
     }
 
     public void adicionaFuncionario(Funcionarios funcionario) {
